@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.work-sans-regular{
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* global classes start here */
+
+/* global classes end here */
+.btn-global{
+    background-color: #FF900E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.p-global{
+    color: #727272;
+    font-size: 16px;
+}
+/* header start here */
+/* nav start here */
+header{
+    background-color: rgb(255, 144, 14,0.1);
+}
+nav{
+    padding: 20px 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #131313;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* nav end here */
+/* hero section start here */
+#hero{
+    padding: 20px 240px;
+    margin-top: 102px;
+}
+
+#hero img{
+    width: 100%;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+.hero-content h1{
+    font-size: 64px;
+    color: #131313;
+}
+/* hero section end here */
+/* header end here */
+
+
+/* main start here */
+/* features section start here */
+#features{
+    padding: 85px 240px;
+}
+.features-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.features-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.features-images  img{
+    width: 100%;
+}
+.features-content{
+    width: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+.features-content h1{
+    font-size: 45px;
+}
+.features-content h1 span:nth-child(2){
+    color: #FF900E;
+}
+.features-content h1 span:nth-child(1){
+    color: #727272;
+    font-weight: 500;
+}
+/* features secton end here */
+/* experience section start here */
+#experience{
+    padding: 20px 240px;
+}
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.experience-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+.experience-content>h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #131313;
+}
+.exp-item{
+    box-shadow: 1px 1px 16px rgba(185, 182, 182, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+}
+.exp-img{
+    width: 50%;
+}
+.experience-container img{
+    width: 100%;
+}
+/* experience section end here */
+/* main end here */
+
+
+
+
+
+
+
+/* responsive mobile start here */
+@media (max-width:776px) {
+    nav{
+        padding: 20px ;
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    #hero{
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .hero-content h1{
+        font-size: 54px;
+    }
+    #features{
+        padding: 85px 20px;
+    }
+    .features-container{
+        flex-direction: column;
+    }
+    .features-content{
+        width: 100%;
+    }
+    #experience{
+        padding: 20px;
+    }
+    .experience-container{
+        flex-direction: column;
+        gap: 50px;
+     }
+     .experience-content{
+         width: 100%;
+     }
+     .exp-img{
+         width: 80%;
+     }
+
+}
+/* responsive mobile end here */
+/* responsive tablet start here */
+@media (min-width:776px) and (max-width:992px) {
+    nav{
+        padding: 20px ;
+    }
+    #hero{
+        padding: 20px;
+    }
+    #features{
+        padding: 85px 20px;
+    }
+    #experience{
+        padding: 20px;
+    }
+    .experience-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+     }
+     .experience-content{
+         width: 100%;
+     }
+     .exp-img{
+         width: 80%;
+     }
+}
+/* responsive tablet end here */
+/* responsive laptop start here */
+@media (min-width:992px) and (max-width:1500px) {
+    nav{
+        padding: 20px 120px;
+    }
+    #hero{
+        padding: 20px 120px;
+    }
+    #features{
+        padding: 85px 120px;
+    }
+    #experience{
+        padding: 20px 120px;
+    }
+    /* .experience-container{
+        flex-direction: column;
+        gap: 50px;
+     }
+     .experience-content{
+         width: 100%;
+     }
+     .exp-img{
+         width: 80%;
+     } */
+}
+/* responsive laptop end here */
